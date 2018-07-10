@@ -1117,6 +1117,30 @@ export const ANALYTICS_CONFIG = /** @type {!JsonObject} */ ({
     },
   },
 
+  'marinsoftware': {
+    'requests': {
+      'base': 'https://tracker.marinsm.com/tp',
+      'baseParams': 'cid=${trackerId}' +
+        '&ref=${externalReferrer}' +
+        '&page=${ampdocUrl}' +
+        '&uuid=CLIENT_ID(_msuuid)' +
+        '&tz=${timezone}' +
+        '&rnd=${random}',
+      'pageView': '${base}?' +
+        '${baseParams}&' +
+        'act=1',
+      'conversion': '${base}?' +
+        '${baseParams}' +
+        '&act=3' +
+        '&trans=UTM:I|${eventID}|${eventType}|${eventProduct}|${eventCategory}|${eventValue}|${eventQuantity}'
+    },
+    'transport': {
+      'beacon': false,
+      'xhrpost': false,
+      'image': true
+    },
+  },
+
   'mediametrie': {
     'requests': {
       'host': 'https://prof.estat.com/m/web',
