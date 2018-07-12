@@ -145,9 +145,9 @@
   },
   "marinsoftware": {
     "base": "https://tracker.marinsm.com/tp",
-    "baseParams": "cid=$trackerId&ref=_external_referrer_&page=_ampdoc_url_&uuid=_client_id_&tz=_timezone_&rnd=_random_",
-    "pageView": "https://tracker.marinsm.com/tp?cid=$trackerId&ref=_external_referrer_&page=_ampdoc_url_&uuid=_client_id_&tz=_timezone_&rnd=_random_&act=1",
-    "conversion": "https://tracker.marinsm.com/tp?cid=$trackerId&ref=_external_referrer_&page=_ampdoc_url_&uuid=_client_id_&tz=_timezone_&rnd=_random_&act=3&trans=UTM:I|$eventID|$eventType|$eventProduct|$eventCategory|$eventValue|$eventQuantity"
+    "baseParams": "cid=$trackerId&ampVersion=_amp_version_&ds=AMP&ref=_external_referrer_&page=_source_url_&uuid=_client_id_&rnd=_random_",
+    "pageView": "https://tracker.marinsm.com/tp?cid=$trackerId&ampVersion=_amp_version_&ds=AMP&ref=_external_referrer_&page=_source_url_&uuid=_client_id_&rnd=_random_&act=1",
+    "conversion": "https://tracker.marinsm.com/tp?cid=$trackerId&ampVersion=_amp_version_&ds=AMP&ref=_external_referrer_&page=_source_url_&uuid=_client_id_&rnd=_random_&act=2&trans=UTM:I|$orderId|$marinConversionType|$productName|$category|$price|$quantity"
   },
   "mediametrie": {
     "host": "https://prof.estat.com/m/web",

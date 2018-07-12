@@ -1121,21 +1121,22 @@ export const ANALYTICS_CONFIG = /** @type {!JsonObject} */ ({
     'requests': {
       'base': 'https://tracker.marinsm.com/tp',
       'baseParams': 'cid=${trackerId}' +
+        '&ampVersion=${ampVersion}' +
+        '&ds=AMP' +
         '&ref=${externalReferrer}' +
-        '&page=${ampdocUrl}' +
+        '&page=${sourceUrl}' +
         '&uuid=CLIENT_ID(_msuuid)' +
-        '&tz=${timezone}' +
         '&rnd=${random}',
       'pageView': '${base}?' +
         '${baseParams}&' +
         'act=1',
       'conversion': '${base}?' +
         '${baseParams}' +
-        '&act=3' +
-        '&trans=UTM:I|${eventID}|${eventType}|${eventProduct}|${eventCategory}|${eventValue}|${eventQuantity}'
+        '&act=2' +
+        '&trans=UTM:I|${orderId}|${marinConversionType}|${productName}|${category}|${price}|${quantity}'
     },
     'transport': {
-      'beacon': false,
+      'beacon': true,
       'xhrpost': false,
       'image': true
     },
