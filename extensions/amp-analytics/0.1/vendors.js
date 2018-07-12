@@ -1125,7 +1125,7 @@ export const ANALYTICS_CONFIG = /** @type {!JsonObject} */ ({
         '&ds=AMP' +
         '&ref=${externalReferrer}' +
         '&page=${sourceUrl}' +
-        '&uuid=CLIENT_ID(_msuuid)' +
+        '&uuid=${clientId(marin_amp_id)}' +
         '&rnd=${random}',
       'pageView': '${base}?' +
         '${baseParams}&' +
